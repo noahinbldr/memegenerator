@@ -25,13 +25,14 @@ function addMeme(e) {
 }
 
 function app() {
-  fetch("https://meme-api.herokuapp.com/gimme/50")
+  fetch("http://localhost:3000/memes")
     .then((res) => res.json())
     .then((memesArr) => {
-      memesArr.memes.forEach((meme) => {
+      memesArr.forEach((meme) => {
         renderMemes(meme);
+        console.log(memesArr);
       });
-      showMeme(memesArr.memes[0]);
+      showMeme(memesArr[0]);
     });
   likeBtn.addEventListener("click", addMeme);
 }
