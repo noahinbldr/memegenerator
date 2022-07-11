@@ -1,0 +1,71 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/6875927.jpg');
+    text-align: center;
+  }
+  
+  #choose {
+    color: white
+  }
+  
+  #title {
+    color: white;
+  }
+  
+  #meme-display-name {
+    color: white;
+  }
+  
+  #meme-nav {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  #meme-nav-bottom {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+  }
+  
+  #meme-nav img {
+    width: 150px;
+    height: 150px;
+    border: solid black 2px;
+    margin: 0.3em;
+  }
+  
+  #meme-display img {
+    height: 35vh;
+    border: solid black 3px;
+  }
+  
+  #meme-display-image {
+    justify-content: left;
+  }
+  
+  #meme-display button {
+    background: greenyellow;
+    border: solid black 1px;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    padding: 0.75em;
+    font-weight: bold;
+  }
+  
+  #new-meme-form {
+    color: white;
+  }
+  
+  form {
+    background: transparent;
+    margin: 2em;
+  }
+  
+  form label {
+    display: block;
+  }
