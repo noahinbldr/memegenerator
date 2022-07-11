@@ -30,6 +30,7 @@ function app() {
     .then((memesArr) => {
       memesArr.forEach((meme) => {
         renderMemes(meme);
+        console.log(memesArr);
       });
       showMeme(memesArr[0]);
     });
