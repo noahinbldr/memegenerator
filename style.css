@@ -1,5 +1,5 @@
 body {
-  background-image: url('https://wallpaperaccess.com/full/6875927.jpg');
+  background-image: url('https://images.hdqwalls.com/wallpapers/geometry-abstract-minimalism-0x.jpg');
   text-align: center;
 }
 
@@ -16,15 +16,14 @@ body {
 }
 
 #meme-nav {
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  width: 100%;
+  justify-content: left;
+  overflow: visible;
+  width: 25%;
   cursor: pointer;
 }
 
 #meme-nav-bottom {
-  display: flex;
+  display: block;
   justify-content: center;
   overflow: auto;
   width: 200px;
@@ -33,8 +32,8 @@ body {
 }
 
 #meme-nav img {
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
   border: solid black 2px;
   margin: 0.3em;
 }
