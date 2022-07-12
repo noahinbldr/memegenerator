@@ -1,30 +1,26 @@
-memeNav = document.getElementById("meme-nav");
-memeNavBottom = document.getElementById("meme-nav-bottom");
-memeName = document.getElementById("meme-display-name");
-memeDispImg = document.getElementById("meme-display-image");
-likeBtn = document.getElementById("like");
-nextBtn = document.getElementById("next");
-previousBtn = document.getElementById("previous");
+let memeNavLeft = document.getElementById("meme-nav-left");
+let memeNavRight = document.getElementById("meme-nav-right");
+let memeTitle = document.getElementById("meme-display-name");
+let memeDispImg = document.getElementById("meme-display-image");
+let likeBtn = document.getElementById("like");
+let nextBtn = document.getElementById("next");
+let previousBtn = document.getElementById("previous");
 let id = 1;
 
 function renderMemes(meme) {
   let memeImg = document.createElement("img");
   memeImg.src = meme.url;
   memeImg.addEventListener("click", () => showMeme(meme));
-  memeNav.append(memeImg);
+  memeNavLeft.append(memeImg);
 }
 
 function showMeme(meme) {
-  memeName.textContent = meme.name;
+  memeTitle.textContent = meme.title;
   memeDispImg.src = meme.url;
 }
 
-function addMeme(e) {
-  e.preventDefault();
-  let bottomMemeImg = document.createElement("img");
-  bottomMemeImg.src = memeDispImg;
-  memeNavBottom.append(memeDispImg);
-  showMeme(meme);
+function moveMeme(meme) {
+  console.log('testing this button')
 }
 
 function previousMeme() {
@@ -54,7 +50,7 @@ function app() {
       });
       showMeme(memesArr[0]);
     });
-  likeBtn.addEventListener("click", addMeme);
+  likeBtn.addEventListener("click", moveMeme);
   nextBtn.addEventListener("click", nextMeme);
   previousBtn.addEventListener("click", previousMeme);
 }
