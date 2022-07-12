@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
   background-image: url('https://wallpaperaccess.com/full/6875927.jpg');
+=======
+  background-image: url('https://images.hdqwalls.com/wallpapers/geometry-abstract-minimalism-0x.jpg');
+>>>>>>> noah
   text-align: center;
 }
 
@@ -15,6 +19,7 @@ body {
   color: white;
 }
 
+<<<<<<< HEAD
 #meme-nav {
   display: flex;
   justify-content: center;
@@ -35,6 +40,27 @@ body {
 #meme-nav img {
   width: 150px;
   height: 150px;
+=======
+#meme-nav-left {
+  display: block;
+  justify-content: left;
+  position: absolute;
+  width: 25%;
+  cursor: pointer;
+}
+
+#meme-nav-right {
+  display: block;
+  justify-content: right;
+  position: absolute;
+  width: 25%;
+  cursor: pointer;
+}
+
+#meme-nav-left img {
+  width: 75px;
+  height: 75px;
+>>>>>>> noah
   border: solid black 2px;
   margin: 0.3em;
 }
@@ -45,6 +71,7 @@ body {
 }
 
 #meme-display-image {
+<<<<<<< HEAD
   justify-content: left;
 }
 
@@ -57,6 +84,77 @@ body {
   font-weight: bold;
 }
 
+=======
+  justify-content: center;
+}
+
+/* buttons */
+#like {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#like:hover {
+  color: white;
+  background-color: black;
+}
+
+#next {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#next:hover {
+  color: white;
+  background-color: black;
+}
+
+#previous {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#previous:hover {
+  color: white;
+  background-color: black;
+}
+
+/* buttons */
+
+>>>>>>> noah
 #new-meme-form {
   color: white;
 }
