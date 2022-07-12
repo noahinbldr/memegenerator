@@ -1,11 +1,12 @@
 let memeNavLeft = document.getElementById("meme-nav-left");
 let memeNavRight = document.getElementById("meme-nav-right");
-let memeTitle = document.getElementById("meme-display-name");
 let memeDispImg = document.getElementById("meme-display-image");
 let likeBtn = document.getElementById("like");
 let nextBtn = document.getElementById("next");
 let previousBtn = document.getElementById("previous");
 let id = 1;
+let darkMode = document.getElementById("dark");
+let lightMode = document.getElementById("light");
 
 function renderMemes(meme) {
   let memeImg = document.createElement("img");
@@ -15,12 +16,19 @@ function renderMemes(meme) {
 }
 
 function showMeme(meme) {
-  memeTitle.textContent = meme.title;
   memeDispImg.src = meme.url;
 }
 
 function moveMeme(meme) {
-  console.log('testing this button')
+  console.log("testing this button");
+}
+
+function toggleDarkMode() {
+  alert("DARK MODE");
+}
+
+function toggleLightMode() {
+  alert("LIGHT MODE");
 }
 
 function previousMeme() {
@@ -53,6 +61,8 @@ function app() {
   likeBtn.addEventListener("click", moveMeme);
   nextBtn.addEventListener("click", nextMeme);
   previousBtn.addEventListener("click", previousMeme);
+  lightMode.addEventListener("click", toggleLightMode);
+  darkMode.addEventListener("click", toggleDarkMode);
 }
 
 app();

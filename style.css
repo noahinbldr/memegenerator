@@ -3,18 +3,6 @@ body {
   text-align: center;
 }
 
-#choose {
-  color: white
-}
-
-#title {
-  color: white;
-}
-
-#meme-display-name {
-  color: white;
-}
-
 #meme-nav-left {
   display: block;
   justify-content: left;
