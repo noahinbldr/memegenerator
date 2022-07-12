@@ -25,6 +25,7 @@ function moveMeme(meme) {
 
 function toggleDarkMode() {
   alert("DARK MODE");
+  // pushing new files for merge
 }
 
 function toggleLightMode() {
