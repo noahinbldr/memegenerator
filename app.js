@@ -42,11 +42,7 @@ function nextMeme() {
 }
 
 function app() {
-<<<<<<< HEAD
-  fetch("http://localhost:3000/memes")
-=======
   fetch("http://localhost:3000/memes/")
->>>>>>> noah
     .then((res) => res.json())
     .then((memesArr) => {
       memesArr.forEach((meme) => {
